@@ -59,13 +59,6 @@ let productos = [
 
 let carrito;
 
-if(JSON.parse(localStorage.getItem('carrito'))) {
-  carrito = JSON.parse(localStorage.getItem('carrito'))
-} else {
-  localStorage.setItem('carrito', JSON.stringify([]))
-  carrito = JSON.parse(localStorage.getItem('carrito'))
-}
-
 function desplegarProductos() {
     for (let i = 0; i < productos.length; i++) {
         const element = productos[i];
